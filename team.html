@@ -18,6 +18,14 @@
             margin-top: 1rem;
         }
 
+        .founders-grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
         .member-card {
             display: flex;
             align-items: start;
@@ -26,6 +34,7 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Makes each card take equal space */
         }
 
         .avatar {
@@ -72,82 +81,101 @@
                 </div>
 
                 <div id="leadershipTeam">
-                    <div class="team-section">
-                        <h2 class="text-2xl font-semibold">Club Founders</h2>
-                        <div class="team-grid">
-                            <div class="member-card">
-                                <div class="avatar">CS</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Coby Stuchfield</h3>
-                                    <p class="text-muted mb-2">Founder</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
+                    <!-- Founders Team -->
+                    <div class="team-grid">
+                        <div class="member-card">
+                            <div class="avatar">CS</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Coby Stuchfield</h3>
+                                <p class="text-muted mb-2">Member</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
                             </div>
-                            <div class="member-card">
-                                <div class="avatar">KN</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Kavish Nayyar</h3>
-                                    <p class="text-muted mb-2">Founder</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="avatar">KN</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Kavish Nayyar</h3>
+                                <p class="text-muted mb-2">Member</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
                             </div>
-                            <div class="member-card">
-                                <div class="avatar">GB</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Gavinder Billing</h3>
-                                    <p class="text-muted mb-2">Founder</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="avatar">GB</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Gavinder Billing</h3>
+                                <p class="text-muted mb-2">Member</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
+                            </div>
+                        </div>
+
                             </div>
                         </div>
                     </div>
-                    <!-- Social Media Team -->
-                    <div class="team-section">
-                        <h2 class="text-2xl font-semibold">Social Media Team</h2>
-                        <div class="team-grid">
-                            <div class="member-card">
-                                <div class="avatar">HK</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Harsha Kharat</h3>
-                                    <p class="text-muted mb-2">LinkedIn Manager</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
-                            </div>
-                            <div class="member-card">
-                                <div class="avatar">EK</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Eesha Kapoor</h3>
-                                    <p class="text-muted mb-2">Instagram Manager</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<br>
                     <!-- Web Development Team -->
                     <div class="team-section">
                         <h2 class="text-2xl font-semibold">Web Development Team</h2>
                         <div class="team-grid">
-                            <div class="member-card">
-                                <div class="avatar">DM</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Divij Mekala</h3>
-                                    <p class="text-muted mb-2">Head of Web Development</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
-                            </div>
-                            <div class="member-card">
-                                <div class="avatar">SD</div>
-                                <div>
-                                    <h3 class="text-xl font-semibold">Samuel Douek</h3>
-                                    <p class="text-muted mb-2">Technical Director</p>
-                                    <p class="text-sm">Active member of the West Hatch Economics Club</p>
-                                </div>
+                        <div class="member-card">
+                            <div class="avatar">DM</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Divij Mekala</h3>
+                                <p class="text-muted mb-2">Technical Director</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
                             </div>
                         </div>
+                        <div class="member-card">
+                            <div class="avatar">SD</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Samuel Douek</h3>
+                                <p class="text-muted mb-2"> The Assistant Technical Director</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="avatar"></div>
+                            <div>
+                                <h3 class="text-xl font-semibold"></h3>
+                                <p class="text-muted mb-2">Website Blog Writer</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
+                            </div>
+                        </div>
+
+                        </div>
                     </div>
+<br>
+                    <!-- Social Media Team -->
+                         <div class="team-section">
+                        <h2 class="text-2xl font-semibold">Social Media Team</h2>
+                        <div class="team-grid">
+                        <div class="member-card">
+                            <div class="avatar">DM</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Harsha Kharat</h3>
+                                <p class="text-muted mb-2">LinkedIn Manager</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
+                            </div>
+                        </div>
+                
+                        <div class="member-card">
+                            <div class="avatar">EK</div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Eesha Kapoor</h3>
+                                <p class="text-muted mb-2">Instagram Manager</p>
+                                <p class="text-sm">Active member of the West Hatch Economics Club</p>
+                            </div>
+                        </div>
+      <div class="member-card">
+                            <div class="avatar"></div>
+                            <div>
+                                <h3 class="text-xl font-semibold"></h3>
+                                <p class="text-muted mb-2"></p>
+                                <p class="text-sm"></p>
+                            </div>
+                        </div>
 
-
-                </div>
+                        </div>
+                    </div>
 
                 <!-- All Members (Hidden by default) -->
                 <div id="regularMembers" style="display: none;">
@@ -432,7 +460,7 @@
             if (leadershipTeam.style.display !== 'none') {
                 leadershipTeam.style.display = 'none';
                 regularMembers.style.display = 'block';
-                toggleButton.textContent = 'Show Leadership';
+                toggleButton.textContent = 'Show Team Members';
             } else {
                 leadershipTeam.style.display = 'block';
                 regularMembers.style.display = 'none';
