@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Hatch Economics Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <!-- Navigation -->
+        <nav class="border-b border-border">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <h1 class="text-2xl font-bold">West Hatch Economics Club</h1>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
+                        <a href="index.html" class="nav-link active"><i class="fas fa-chart-line"></i> Home</a>
+                        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="events.html" class="nav-link"><i class="fas fa-calendar"></i> Events</a>
+                        <a href="team.html" class="nav-link"><i class="fas fa-users"></i> Team</a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Blog</a>
+                        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto p-8">
+            <div class="space-y-12">
+                <!-- Hero Section -->
+                <section class="relative py-12 space-y-4">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-1/2 text-left text-center-mobile">
+                            <p class="text-xl mb-4">
+                                Our West Hatch Economics Club is a platform for students passionate 
+                                about economics, finance, and global markets. We organize 
+                                discussions, workshops, and events to foster learning and networking 
+                                opportunities.
+                            </p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                                <div class="feature-card">
+                                    <i class="fas fa-users text-primary"></i>
+                                    <div>
+                                        <h3 class="font-semibold">Community</h3>
+                                        <p class="text-sm text-muted">Join a diverse group of economics enthusiasts</p>
+                                    </div>
+                                </div>
+                                <div class="feature-card">
+                                    <i class="fas fa-brain text-primary"></i>
+                                    <div>
+                                        <h3 class="font-semibold">Learning</h3>
+                                        <p class="text-sm text-muted">Engage in meaningful discussions and debates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Description Section -->
+                <section class="text-center space-y-6 py-12 bg-muted">
+                    <p class="text-lg max-w-3xl mx-auto">
+                        Discover the world of economics through discussions, competitions, and real-world case studies. 
+                        We explore financial trends, economic policies, and decision-making beyond the A-Level curriculum.
+                    </p>
+                    <a href="events.html" class="btn btn-primary">View Events →</a>
+                </section>
+
+                <!-- Features Grid -->
+                <section class="grid md:grid-cols-2 gap-8">
+                    <div class="card">
+                        <h3 class="text-2xl font-semibold mb-4">Regular Events</h3>
+                        <p class="text-muted">
+                            Attend workshops, seminars, and discussions on economic topics.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-2xl font-semibold mb-4">Community</h3>
+                        <p class="text-muted">
+                            Connect with fellow students passionate about economics.
+                        </p>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
