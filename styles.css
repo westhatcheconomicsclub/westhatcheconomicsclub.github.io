@@ -376,6 +376,50 @@ nav {
     border-radius: 3px;
 }
 
+/* Team Styles */
+.team-section {
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.founders-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.member-card {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Makes each card take equal space */
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    aspect-ratio: 1;
+}
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     .text-center-mobile {
@@ -435,6 +479,10 @@ nav {
     }
     
     .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
         grid-template-columns: 1fr;
     }
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,12 @@
             <div class="container mx-auto px-4">
                 <div class="flex h-16 items-center justify-between">
                     <h1 class="text-2xl font-bold">West Hatch Economics Club</h1>
-                    <div class="flex items-center gap-1">
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
                         <a href="index.html" class="nav-link"><i class="fas fa-chart-line"></i> Home</a>
                         <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
                         <a href="events.html" class="nav-link"><i class="fas fa-calendar"></i> Events</a>
@@ -30,11 +36,16 @@
         <main class="container mx-auto p-8">
             <div class="space-y-8">
                 <h1 class="text-3xl font-bold mb-6">Latest Articles</h1>
-                
-                                    </div>
-                </div>
+                <p class="text-muted">Coming soon! Check back later for our latest economic insights and articles.</p>
             </div>
         </main>
     </div>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
