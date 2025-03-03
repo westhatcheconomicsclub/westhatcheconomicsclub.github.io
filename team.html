@@ -5,8 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team - West Hatch Economics Club</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <style>
+        html {
+          height: 100%;
+          width: 100%;
+        }
+
+        /* Global Variables */
+        :root {
+          --primary: #66b3ff;
+          --border: #e5e7eb;
+          --background: #f9fafb;
+          --muted: #6b7280;
+        }
+
+        /* Base styles */
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          color: #111827;
+          background-color: var(--background);
+        }
+
+        /* Layout utilities */
+        .container {
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .min-h-screen {
+          min-height: 100vh;
+        }
+
+        .flex {
+          display: flex;
+        }
+
+        .items-center {
+          align-items: center;
+        }
+
+        .justify-between {
+          justify-content: space-between;
+        }
+
+        .space-y-12 > * + * {
+          margin-top: 3rem;
+        }
+
+        .border-b {
+          border-bottom: 1px solid;
+        }
+
+        .border-border {
+          border-color: var(--border);
+        }
+
+        /* Spacing utilities */
+        .p-8 {
+          padding: 2rem;
+        }
+
+        .px-4 {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .h-16 {
+          height: 4rem;
+        }
+
+        .gap-1 {
+          gap: 0.25rem;
+        }
+
+        .mb-2 {
+          margin-bottom: 0.5rem;
+        }
+
+        .mx-auto {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /* Typography */
+        .text-2xl {
+          font-size: 1.5rem;
+        }
+
+        .text-3xl {
+          font-size: 1.875rem;
+        }
+
+        .text-xl {
+          font-size: 1.25rem;
+        }
+
+        .text-sm {
+          font-size: 0.875rem;
+        }
+
+        .font-bold {
+          font-weight: 700;
+        }
+
+        .font-semibold {
+          font-weight: 600;
+        }
+
+        .text-muted {
+          color: var(--muted);
+        }
+
+        /* Navigation */
+        .nav-link {
+          padding: 0.5rem 0.75rem;
+          text-decoration: none;
+          color: #4b5563;
+          border-radius: 0.375rem;
+          transition: background-color 0.2s;
+        }
+
+        .nav-link:hover {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link.active {
+          color: var(--primary);
+          font-weight: 500;
+        }
+
+        /* Buttons */
+        .btn {
+          padding: 0.5rem 1rem;
+          border-radius: 0.375rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+
+        .btn-outline {
+          background-color: transparent;
+          border: 1px solid var(--border);
+          color: #4b5563;
+        }
+
+        .btn-outline:hover {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+
         .team-section {
             margin-bottom: 2rem;
         }
@@ -33,7 +182,7 @@
             padding: 1.5rem;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
             flex: 1; /* Makes each card take equal space */
         }
 
@@ -107,9 +256,6 @@
                                 <p class="text-sm">Active member of the West Hatch Economics Club</p>
                             </div>
                         </div>
-
-                            </div>
-                        </div>
                     </div>
 <br>
                     <!-- Web Development Team -->
@@ -140,16 +286,15 @@
                                 <p class="text-sm">Active member of the West Hatch Economics Club</p>
                             </div>
                         </div>
-
                         </div>
                     </div>
 <br>
                     <!-- Social Media Team -->
-                         <div class="team-section">
+                    <div class="team-section">
                         <h2 class="text-2xl font-semibold">Social Media Team</h2>
                         <div class="team-grid">
                         <div class="member-card">
-                            <div class="avatar">DM</div>
+                            <div class="avatar">HK</div>
                             <div>
                                 <h3 class="text-xl font-semibold">Harsha Kharat</h3>
                                 <p class="text-muted mb-2">LinkedIn Manager</p>
@@ -165,7 +310,7 @@
                                 <p class="text-sm">Active member of the West Hatch Economics Club</p>
                             </div>
                         </div>
-      <div class="member-card">
+                        <div class="member-card">
                             <div class="avatar"></div>
                             <div>
                                 <h3 class="text-xl font-semibold"></h3>
@@ -173,9 +318,9 @@
                                 <p class="text-sm"></p>
                             </div>
                         </div>
-
                         </div>
                     </div>
+                </div>
 
                 <!-- All Members (Hidden by default) -->
                 <div id="regularMembers" style="display: none;">
@@ -466,6 +611,12 @@
                 regularMembers.style.display = 'none';
                 toggleButton.textContent = 'View All Members';
             }
+        }
+        
+        // Mobile menu toggle
+        function toggleMenu() {
+          const mobileMenu = document.getElementById('mobile-menu');
+          mobileMenu.classList.toggle('show');
         }
     </script>
 </body>
