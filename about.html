@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - West Hatch Economics Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <!-- Navigation -->
+        <nav class="border-b border-border">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <h1 class="text-2xl font-bold">West Hatch Economics Club</h1>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
+                        <a href="index.html" class="nav-link"><i class="fas fa-chart-line"></i> Home</a>
+                        <a href="about.html" class="nav-link active"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="events.html" class="nav-link"><i class="fas fa-calendar"></i> Events</a>
+                        <a href="team.html" class="nav-link"><i class="fas fa-users"></i> Team</a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Blog</a>
+                        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto p-8">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <h1 class="text-3xl font-bold mb-6">About Our Club</h1>
+
+                <p class="text-lg mb-8">
+                    Our West Hatch Economics Club is a platform for students passionate 
+                    about economics, finance, and global markets. We organize 
+                    discussions, workshops, and events to foster learning and networking 
+                    opportunities.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+                        <p class="text-muted">
+                            To provide a collaborative environment where students can explore economic concepts
+                            beyond the classroom, develop critical thinking skills, and prepare for university
+                            and careers in economics and related fields.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
+                        <p class="text-muted">
+                            To become a leading platform for economics education and discussion at West Hatch,
+                            fostering a community of informed and engaged young economists.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4">What We Do</h2>
+                
+                <div class="space-y-6">
+                    <div class="feature-card">
+                        <i class="fas fa-comments text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Discussion Sessions</h3>
+                            <p class="text-muted">Regular meetings to discuss current economic issues and topics of interest.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-trophy text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Competitions</h3>
+                            <p class="text-muted">Participate in local and national economics competitions as a team.</p>
+                        </div>
+                    </div>
+                    
+                    
+         
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-book-reader text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Study Groups</h3>
+                            <p class="text-muted">Collaborative study sessions to support academic achievement in economics.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="text-2xl font-bold mb-4 mt-8">Join Us</h2>
+                <p class="mb-6">
+                    The West Hatch Economics Club welcomes students of all levels who are interested in economics.
+                    Whether you're currently studying economics or just curious about the subject, we'd love to have you join us!
+                </p>
+                
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

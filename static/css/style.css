@@ -1,0 +1,488 @@
+
+/* Global Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #343a40;
+}
+
+/* Standardized Footer Styling */
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0 20px;
+  margin-top: 30px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #495057;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #e7e7e7;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #777;
+}
+
+/* Feature Boxes */
+.feature-box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+.feature-box i {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+/* Feature Cards */
+.feature-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Team Members */
+.team-member {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.mb-5 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.mb-5:last-of-type {
+  border-bottom: none;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.upcoming-events h2 {
+  margin-bottom: 20px;
+}
+
+.upcoming-events p {
+  margin-bottom: 30px;
+}
+
+.upcoming-events .btn {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.upcoming-events .btn:hover {
+  background-color: #002244;
+}
+
+/* Admin Buttons */
+.admin-login-btn {
+  margin-left: 10px;
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-login-btn:hover {
+  background-color: #0056b3;
+}
+
+.admin-logout-btn {
+  margin-left: 10px;
+  padding: 5px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Blog Page Styles */
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.blog-post h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.blog-post .author {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+.blog-post .date {
+  font-size: 14px;
+  color: #666;
+}
+
+.blog-post .remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 2px 8px;
+  font-size: 12px;
+  display: none;
+}
+
+.add-blog-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.add-blog-form input[type="text"],
+.add-blog-form textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-blog-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.info-box {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Events Page Styles */
+.event-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.event-card .date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.event-card h4 {
+  margin-bottom: 10px;
+}
+
+.event-card .event-details span {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.event-card .remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.event-card .remove-btn:hover {
+  background-color: #c82333;
+}
+
+.add-event-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.add-event-form input[type="text"],
+.add-event-form input[type="date"],
+.add-event-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Members Page Styles */
+.member-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.remove-btn {
+  margin-left: 10px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.add-member-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.add-member-form input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Login Page Styles */
+.login-form {
+  margin-top: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.login-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Other Helpers */
+.home-button {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 5px;
+  font-size: 24px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

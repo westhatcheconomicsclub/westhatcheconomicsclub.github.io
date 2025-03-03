@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - West Hatch Economics Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <!-- Navigation -->
+        <nav class="border-b border-border">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <h1 class="text-2xl font-bold">West Hatch Economics Club</h1>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
+                        <a href="index.html" class="nav-link"><i class="fas fa-chart-line"></i> Home</a>
+                        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="events.html" class="nav-link"><i class="fas fa-calendar"></i> Events</a>
+                        <a href="team.html" class="nav-link"><i class="fas fa-users"></i> Team</a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Blog</a>
+                        <a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto p-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="contact-grid">
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <h3 class="font-semibold">Address</h3>
+                        <p>West Hatch High School</p>
+                    </div>
+
+                    <!-- Phone Section -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone fa-2x"></i>
+                        </div>
+                        <h3 class="font-semibold">Phone</h3>
+                        <p>Click on the chat button below</p>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <h3 class="font-semibold">Email</h3>
+                        <a href="mailto:West-Hatch-Economic-Club@outlook.com" class="text-primary hover-underline">
+                            West-Hatch-Economic-Club@outlook.com
+                        </a>
+                    </div>
+
+                    <!-- Connect Section -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments fa-2x"></i>
+                        </div>
+                        <h3 class="font-semibold">Connect</h3>
+                        <div class="social-links">
+                            <a href="#linkedin" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#instagram" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="space-y-8">
+                    <h2 class="text-2xl font-bold text-center">Get in Touch</h2>
+                    <form class="space-y-6">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+
+                            <input type="email" class="form-input" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

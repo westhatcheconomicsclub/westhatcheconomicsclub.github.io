@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - West Hatch Economics Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <!-- Navigation -->
+        <nav class="border-b border-border">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <h1 class="text-2xl font-bold">West Hatch Economics Club</h1>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
+                        <a href="index.html" class="nav-link"><i class="fas fa-chart-line"></i> Home</a>
+                        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="events.html" class="nav-link active"><i class="fas fa-calendar"></i> Events</a>
+                        <a href="team.html" class="nav-link"><i class="fas fa-users"></i> Team</a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Blog</a>
+                        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto p-8">
+            <div class="space-y-4">
+                <h1 class="text-3xl font-bold mb-6">Upcoming Events</h1>
+                
+                <!-- Competition Planning Event -->
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2">Competition planning</h2>
+                    <p class="text-muted mb-4">Sign up now! Details & registration here:</p>
+                    <div class="flex gap-4 text-sm mb-4">
+                        <span><i class="far fa-calendar"></i> MAY 15, 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Study room center</span>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScS_7dqP10PvROr5cA4SaAeduIxm1JVQ5rsbbulfQ8-nI2lPg/viewform" 
+                       target="_blank" 
+                       class="btn btn-primary">
+                        Sign Up Now
+                    </a>
+                </div>
+
+                <!-- Debate Event -->
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2">Debate</h2>
+                    <p class="text-muted mb-4">Question: Should private schools be abolished?</p>
+                    <div class="flex gap-4 text-sm">
+                        <span><i class="far fa-calendar"></i> 3rd Febuaray, 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Study room center</span>
+                    </div>
+                </div>
+
+                <!-- Introduction Event -->
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2">Introduction</h2>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+
+                    <p class="text-muted mb-4">Club introduction and overview</p>
+                    <div class="flex gap-4 text-sm">
+                        <span><i class="far fa-calendar"></i> Jaunuary, 27 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Study room center</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
