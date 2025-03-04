@@ -1,3 +1,3 @@
-# westhatcheconomicsclub.io
+# westhatcheconomicsassociation.io
 
-This is the website of the West Hatch Economics Club
+This is the website of the West Hatch Economics Association
